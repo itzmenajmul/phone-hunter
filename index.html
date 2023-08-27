@@ -14,7 +14,11 @@
   </head>
   <body>
     <header>
-      <h2 class="text-center text-4xl lg:text-6xl my-3">Hunting Phone</h2>
+      <h2
+        class="text-center text-gray-600 font-semibold text-4xl lg:text-6xl my-3"
+      >
+        Hunting Phone
+      </h2>
     </header>
     <main>
       <section class="text-center">
@@ -31,12 +35,18 @@
 
       <!-- search result  -->
       <section>
+        <!-- spinner/loader -->
+        <div id="loading-spinner" class="text-center my-40 hidden">
+          <span
+            class="loading loading-infinity loading-lg text-gray-500"
+          ></span>
+        </div>
         <div
           id="phone-container"
           class="w-4/5 mx-auto mt-2 mb-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
         ></div>
         <!-- show all button -->
-        <div id="show-all-container" class="hidden">
+        <div id="show-all-container" class="hidden text-center">
           <button class="btn btn-accent text-gray-100">Show all</button>
         </div>
       </section>
